@@ -1,6 +1,6 @@
 #Normally in simple_and.design_config.tcl
 set lib_dir /pkgs/synopsys/2020/32_28nm/SAED32_EDK
-set top_design simple_adder
+set top_design adder_1d
 set rtl_list [list ../rtl/$top_design.sv ]
 set slow_corner "ss0p95v125c"
 set lib_types "stdcell_rvt"

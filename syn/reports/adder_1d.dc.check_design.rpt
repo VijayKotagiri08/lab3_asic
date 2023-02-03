@@ -1,0 +1,18 @@
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP3
+Date:        Thu Feb  2 19:46:10 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      2
+--------------------------------------------------------------------------------
+
+Warning: In design 'adder_1d', output port 'carry[3]' is connected directly to output port 'carry[2]'. (LINT-31)
+Warning: In design 'adder_1d', output port 'carry[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'adder_1d', output port 'carry[2]' is connected directly to 'logic 0'. (LINT-52)
+1

@@ -1,0 +1,19 @@
+ guiWinConfig .a.pane.f3.command.text.text.promt1 103 19 1 -11 
+ guiWinConfig .a.pane.f3.command.text.text.promt2 103 19 1 8 
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.a.pane.f2.mesg.text.vsb cget -activebackground]
+	.a.pane.f2.mesg.text.vsb configure -activebackground [.a.pane.f2.mesg.text.vsb cget -background]
+    }
+    .a.pane.f2.mesg.text.vsb activate [.a.pane.f2.mesg.text.vsb identify 5 75]
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.a.pane.f2.mesg.text.vsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .a.pane.f2.mesg.text.vsb activate {}
+     tk::MbEnter .v_menu.read
+     tk::MbMotion .v_menu.read up 261 84
+     tk::MbLeave .v_menu.read
+         if { [ .icon.srccode cget -state ] == "normal" } {
+            .icon.srccode configure -relief groove
+        }
+    
+     tk::ButtonEnter .icon.srccode
